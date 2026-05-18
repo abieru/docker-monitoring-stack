@@ -9,7 +9,7 @@ Stack completa para monitoramento do sistema e containers Docker, similar ao Tru
 | **Prometheus** | 9090 | Banco de dados de métricas |
 | **Grafana** | 3000 | Dashboards visuais |
 | **Node Exporter** | 9100 | Métricas do sistema (CPU, memória, disco, rede) |
-| **cAdvisor** | 8080 | Métricas dos containers Docker |
+| **cAdvisor** | 18080 | Métricas dos containers Docker |
 
 ## Como usar
 
