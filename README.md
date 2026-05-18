@@ -23,10 +23,11 @@ docker compose up -d
 - **Grafana**: http://localhost:3000 (usuário: `admin`, senha: `admin`)
 - **Prometheus**: http://localhost:9090
 
-3. No Grafana, importe os dashboards oficiais:
-- Vá em `Dashboards > Import`
-- **Node Exporter Full**: ID `1860`
-- **Docker Monitoring**: ID `193` (ou `11600`)
+3. Os dashboards já vêm provisionados automaticamente. Acesse-os em:
+- **Dashboards > Browse** no Grafana
+- **Node Exporter Full** — métricas completas do sistema
+- **Node Exporter Disk** — focado em armazenamento/disco
+- **Docker Monitoring** — containers Docker ativos
 
 ## O que você vai ver
 
