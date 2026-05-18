@@ -69,6 +69,19 @@ services:
     networks:
       - monitoring
 
+  homarr:
+    image: ghcr.io/ajnart/homarr:latest
+    container_name: homarr
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - homarr_data:/app/data
+      - homarr_icons:/app/public/icons
+    ports:
+      - "7575:7575"
+    networks:
+      - monitoring
+
 networks:
   monitoring:
     driver: bridge
@@ -76,3 +89,5 @@ networks:
 volumes:
   prometheus_data:
   grafana_data:
+  homarr_data:
+  homarr_icons:
