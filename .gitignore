@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Data volumes (se mapeadas localmente no futuro)
+*.db
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
